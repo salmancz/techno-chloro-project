@@ -1,0 +1,31 @@
+.about-page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #24252a;
+  color: aliceblue;
+  min-height: 40vh;
+  align-items: center;
+}
+
+.right-wrapper {
+  width: 40%;
+  padding: 10px 20px;
+}
+.left-wrapper {
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .about-page-wrapper {
+    flex-direction: column;
+  }
+  .right-wrapper {
+    width: 100%;
+  }
+
+  .left-wrapper {
+    width: 100%;
+  }
+}
