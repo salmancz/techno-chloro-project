@@ -55,6 +55,23 @@ body {
   opacity: 0.4;
 }
 
+.image-holder-products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+.image-holder-products .image-div {
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.image-holder-products .image-div img {
+  /* image to fit in div */
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .company-page-wrapper .company-holder h1 {
     text-align: center;
@@ -66,5 +83,16 @@ body {
     width: 80%;
     margin: 0 auto;
     margin: 3rem auto;
+  }
+  .image-holder-products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .image-holder-products .image-div {
+    width: 100%;
   }
 }
