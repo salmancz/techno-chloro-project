@@ -2,11 +2,12 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  color: #fff;
 }
 
 .company-page-wrapper {
   min-height: 100vh;
-  color: rgb(219, 219, 219) !important;
+  color: rgb(255, 255, 255) !important;
   line-height: 2rem;
 }
 
@@ -78,6 +79,10 @@ body {
     color: #c20000;
     font-size: 1.4rem;
     margin-bottom: 1rem;
+  }
+  .company-page-wrapper .company-holder h4 {
+    color: #c20000;
+    font-size: 1rem;
   }
   .company-page-wrapper .company-holder {
     width: 80%;
