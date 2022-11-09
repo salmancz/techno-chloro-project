@@ -1,4 +1,8 @@
-.extra-style-head {
+body {
+  overflow-x: hidden;
+}
+
+extra-style-head {
   margin-top: 5rem;
 }
 
@@ -77,9 +81,42 @@ h4 {
   height: 100%;
 }
 
+.features-cross-block {
+  display: flex;
+  flex-direction: row;
+  min-height: 50vh;
+  /* background-color: red; */
+  justify-content: space-between;
+}
+
+.features-cross-block .right-cross {
+  width: 45%;
+  /* background-color: green; */
+  border: 1px solid #d65050;
+  padding: 1rem 2rem;
+}
+
+.features-cross-block .left-cross {
+  width: 45%;
+  /* background-color: #fff; */
+  border: 1px solid #d65050;
+  padding: 1rem 2rem;
+}
+
+.features-cross-block .left-cross img {
+  margin-top: 2rem;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .gas-chlorinator-div {
     flex-direction: column;
+  }
+  li {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
   }
   .left-right-block {
     flex-direction: column;
@@ -101,6 +138,15 @@ h4 {
   .image-holder-feed .left-feed {
     width: 100%;
   }
+
+  .features-cross-block {
+    flex-direction: column;
+  }
+  .features-cross-block .left-cross,
+  .features-cross-block .right-cross {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 @media (max-width: 320px) {
   .left-right-block {
@@ -118,6 +164,20 @@ h4 {
   }
 
   .image-holder-feed .left-feed {
+    width: 100%;
+  }
+  .features-cross-block {
+    flex-direction: column;
+  }
+  li {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+  }
+  .features-cross-block .left-cross,
+  .features-cross-block .right-cross {
+    margin-bottom: 2rem;
     width: 100%;
   }
 }
